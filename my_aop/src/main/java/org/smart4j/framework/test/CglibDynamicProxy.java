@@ -51,7 +51,7 @@ public class CglibDynamicProxy implements MethodInterceptor {
                             Object[] objects, MethodProxy methodProxy) throws Throwable {
         System.out.println("before");
         Object result = methodProxy.invokeSuper(target, objects);//父类执行返回值
-        System.out.println("after");
+        System.out.println("after执行");
         return result;
     }
 }
